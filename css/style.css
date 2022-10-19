@@ -171,6 +171,11 @@ footer a{
 .ImgAlojamiento{
     width: 320px;
     height: 1000px;
+    transition: width 2s, height 2s;
+}
+
+.ImgAlojamiento:hover{
+    width:  700px;
 }
 
 .seccionVuelos{
