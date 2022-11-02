@@ -47,7 +47,7 @@ main{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/img/fondo-paginas-avion.jpg");
+    background-image: url("../assets/img/fondo-paginas-avion3.jpg");
     font-size: xx-large;
     font-family: 'Roboto', sans-serif;
 }
@@ -295,7 +295,7 @@ input[type='submit']{
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
-            background-image: url("../assets/img/fondo-paginas-avion.jpg");
+            background-image: url("../assets/img/fondo-paginas-avion3.jpg");
             font-size: xx-large;
             font-family: 'Roboto', sans-serif;
         }
@@ -550,7 +550,6 @@ input[type='submit']{
     .header{
         display: flex;
         flex-direction: column wrap;
-        justify-content: space-between;
     }
 
     .navBar a {
@@ -575,23 +574,28 @@ input[type='submit']{
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/img/fondo-paginas-avion.jpg");
+        background-image: url("../assets/img/fondo-paginas-avion3.jpg");
         font-size: xx-large;
         font-family: 'Roboto', sans-serif;
     }
     
     .tamañoImagen{
-        width: 475px;
+        width: 375px;
         height: 180px;
     }
 
-    
+
     .loguito{
         grid-area: loguito;
     }
     
+    .logo{
+        width: 375px;
+        height: 180px;
+    }
+
     .barraMenu{
-        margin-left: 300px;
+        margin-left: 0px;
         margin-top: 80px;
         width: 100px;
         height: 100px;
@@ -747,7 +751,7 @@ input[type='submit']{
         padding: .8rem;
         overflow: hidden;
         color: rgb(8, 4, 252);
-        margin-left: 120px;
+        margin-left: 75px;
     }
     
     .seccionContacto{
