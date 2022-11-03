@@ -1,0 +1,55 @@
+.OfImg {
+    width: 300px;
+    height: 300px;
+    transition: width 2s, height 2s;
+
+    &:hover {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+.seccionOferta {
+    @include propiedades-flex;
+    color: $color-titulos;
+}
+
+.opiniones {
+    @include propiedades-flex;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        border: 3px solid black;
+        width: 300px;
+        height: 300px;
+        transition: width 2s, height 2s;
+
+&:hover {
+        width: 550px;
+        height: 550px;
+        font-size: xx-large;
+}
+    }
+}
+
+.opinionesTitulo{
+    color: $color-titulos;
+}
+
+.imagenFondo3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include propiedades-flex;
+  }
+
+  .imagenFondo {
+    background-attachment: fixed;
+    background-size: 210vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/fondo-paginas-avion3.jpg");
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+  }

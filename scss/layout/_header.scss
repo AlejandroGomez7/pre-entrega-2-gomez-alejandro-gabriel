@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.logo {
+    width: 175px;
+    height: 177px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2 , 1fr;
+    grid-template-areas: "loguito barraMenu";
+}
+
+.loguito {
+    grid-area: loguito;
+}
+
+.barraMenu {
+    margin-left: 900px;
+    margin-top: 80px;
+    width: 100px;
+    height: 100px;
+    grid-area: barraMenu;
+}

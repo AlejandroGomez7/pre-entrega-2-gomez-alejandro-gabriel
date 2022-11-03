@@ -1,0 +1,11 @@
+@mixin propiedades-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+@mixin propiedades-flex-mobile {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+}

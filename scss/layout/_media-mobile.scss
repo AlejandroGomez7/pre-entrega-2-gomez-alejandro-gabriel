@@ -1,0 +1,238 @@
+@media (max-width: 576px) {
+    body {
+      margin: 0;
+    }
+  
+    .header {
+      display: flex;
+      flex-direction: column wrap;
+    }
+  
+    main {
+      margin-bottom: 0px;
+    }
+  
+    .imagenFondo {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      background-image: url("../assets/img/fondo-paginas-avion3.jpg");
+      font-size: xx-large;
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .tamañoImagen {
+      width: 375px;
+      height: 180px;
+    }
+  
+    .loguito {
+      grid-area: loguito;
+    }
+  
+    .logo {
+      width: 375px;
+      height: 180px;
+    }
+  
+    .barraMenu {
+      margin-right: 100px;
+      margin-left: 0px;
+      margin-top: 80px;
+      width: 100px;
+      height: 100px;
+      grid-area: barraMenu;
+    }
+  
+    .OfImg {
+      width: 300px;
+      height: 300px;
+      transition: width 2s , height 2s;
+  
+      &:hover {
+        height: 450px;
+        width: 450px;
+      }
+    }
+  
+    .seccionOferta, .opiniones {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+    .title {
+      font-size: xx-large;
+    }
+  
+    .opinionesTitulo {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+    .opiniones p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 23px;
+      border: 3px solid black;
+      width: 310px;
+      height: 310px;
+      color: darkred;
+      transition: width 2s, height 2s;
+  
+      &:hover {
+        width: 275px;
+        height: 500px;
+        font-size: 28px;
+      }
+    }
+  
+    .logosFooter {
+      list-style-type: none;
+      width: 50px;
+      height: 50px;
+      transition: width 2s, height 2s;
+  
+      &:hover {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  
+    footer {
+      background-color: rgb(93, 248, 163);
+      margin-top: 0px;
+    }
+  
+    .seccionFooter {
+      display: flex;
+      flex-flow: row-reverse wrap;
+      justify-content: end;
+      gap: 20px;
+    }
+  
+    .contactoButton {
+      width: 210px;
+      height: 100px;
+      border: 3px solid rgb(250, 161, 77);
+    }
+  
+    footer a {
+      font-size: xx-large;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      color: rgb(252, 5, 5);
+    }
+  
+    .nosotros {
+      font-family: 'Roboto', sans-serif;
+      font-size: medium;
+    }
+  
+    .parrafoNosotros {
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+      height: 100%;
+      color: rgb(255, 0, 0);
+    }
+  
+    .SeccionAlojamiento {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    .ImgAlojamiento {
+      width: 320px;
+      height: 400px;
+      transition: width 2s , height 2s;
+  
+      &:hover {
+        width: 475px;
+        height: 600px;
+      }
+    }
+  
+    .seccionVuelos {
+      @include propiedades-flex-mobile
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    .imgVuelos {
+      width: 320px;
+      height: 400px;
+      transition: width 2s , height 2s;
+  
+      &:hover {
+        width: 475px;
+        height: 600px;
+      }
+    }
+  
+    .nosotros {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+    .seccionContacto {
+      width: 350px;
+      height: 90%;
+      padding: .8rem;
+      overflow: hidden;
+      color: rgb(8, 4, 252);
+      margin-left: 75px;
+      border: 5px solid brown;
+  
+      label, input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+        background-color: indianred;
+      }
+  
+      input:not([type='submit']) {
+        border: none;
+        border-bottom: 2px solid salmon;
+        margin-bottom: 10px;
+        font-size: 20px;
+        outline: none;
+        color: gray;
+      }
+  
+      textarea {
+        border: none;
+        border-bottom: 2px solid salmon;
+        margin-bottom: 10px;
+        font-size: 20px;
+        outline: none;
+        color: gray;
+        min-height: 50px;
+      }
+    }
+  
+    input[type='submit'] {
+      padding: 10px;
+      border: none;
+      background-color: lightcoral;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  
+    .imagenFondo3 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  
+    .ubicacionMapa, .ubicacion {
+      @include propiedades-flex-mobile;
+    }
+  }

@@ -1,0 +1,25 @@
+.seccionVuelos {
+  @extend .SeccionAlojamiento
+  }
+  
+  .imgVuelos {
+    @extend .ImgAlojamiento
+    }
+  
+
+  .imagenFondo3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include propiedades-flex;
+  }
+
+  .imagenFondo {
+    background-attachment: fixed;
+    background-size: 210vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/fondo-paginas-avion3.jpg");
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+  }
