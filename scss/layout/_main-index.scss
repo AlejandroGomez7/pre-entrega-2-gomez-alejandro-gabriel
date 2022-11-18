@@ -4,18 +4,18 @@
     transition: width 2s, height 2s;
 
     &:hover {
-        width: 550px;
-        height: 550px;
+        width: 400px;
+        height: 400px;
     }
 }
 
 .seccionOferta {
-    @include propiedades-flex;
+    @include propiedades-flex1;
     color: $color-titulos;
 }
 
 .opiniones {
-    @include propiedades-flex;
+    @include propiedades-flex1;
 
     p {
         font-family: 'Roboto', sans-serif;
@@ -26,9 +26,9 @@
         transition: width 2s, height 2s;
 
 &:hover {
-        width: 550px;
-        height: 550px;
-        font-size: xx-large;
+        width: 400px;
+        height: 400px;
+        font-size: x-large;
 }
     }
 }
@@ -41,9 +41,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     @include propiedades-flex;
-  }
+}
 
-  .imagenFondo {
+.imagenFondo {
     background-attachment: fixed;
     background-size: 210vh;
     background-repeat: no-repeat;
@@ -52,4 +52,4 @@
     background-image: url("../assets/img/fondo-paginas-avion3.jpg");
     font-size: xx-large;
     font-family: 'Roboto', sans-serif;
-  }
+}

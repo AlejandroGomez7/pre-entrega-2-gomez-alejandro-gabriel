@@ -23,44 +23,72 @@
   grid-area: loguito; }
 
 .barraMenu {
-  margin-left: 900px;
+  margin-left: 700px;
   margin-top: 80px;
-  width: 100px;
+  width: 900px;
   height: 100px;
-  grid-area: barraMenu; }
+  grid-area: barraMenu;}
 
 .OfImg {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   transition: width 2s, height 2s; }
   .OfImg:hover {
-    width: 550px;
-    height: 550px; }
+    width: 600px;
+    height: 600px; }
 
 .seccionOferta {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  color: red; }
+  justify-content: space-evenly;
+  color: rgb(111, 0, 255);
+  font-size: 125px;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 4px;
+  text-decoration: none;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: solid #a31cd9 3px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#692bba), to(#b839a9));
+  background: -moz-linear-gradient(top, #692bba, #b839a9);
+  width: 270px;
+}
+.button:hover {
+  background: #3fb8fa;
+}
+
+.opiniones2{
+  background: #2BC0E4;
+background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);
+background: linear-gradient(to left, #EAECC6, #2BC0E4);
+}
 
 .opiniones {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-evenly;
+  color: black;
+  margin-top: 100px;
+}
   .opiniones p {
     font-family: 'Roboto', sans-serif;
     font-size: large;
     border: 3px solid black;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 230px;
     transition: width 2s, height 2s; }
     .opiniones p:hover {
-      width: 550px;
-      height: 550px;
-      font-size: xx-large; }
+      width: 650px;
+      height: 230px;
+      font-size: 22px; }
 
 .opinionesTitulo {
-  color: red; }
+  color: rgb(111, 0, 255); }
 
 .imagenFondo3 {
   padding-top: 50px;
@@ -89,14 +117,18 @@
     height: 65px; }
 
 footer {
-  background-color: bisque;
+  background: #2BC0E4;
+background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);
+background: linear-gradient(to right, #EAECC6, #2BC0E4);
   margin-top: 0px; }
 
 .seccionFooter {
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: end;
-  gap: 20px; }
+  gap: 20px;
+  padding-bottom: 5px;
+}
 
 .contactoButton {
   width: 210px;
@@ -111,42 +143,40 @@ footer a {
 
 .nosotros {
   font-family: 'Roboto', sans-serif;
-  font-size: xx-large;
-  color: red; }
+  color: rgb(111, 0, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nosotros h1{
+  font-size: 100px;
+}
 
 .parrafoNosotros {
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  height: 100%; }
+  height: 100%;;
+}
 
-.imagenFondo3 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-.imagenFondo {
-  background-attachment: fixed;
-  background-size: 210vh;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/img/fondo-paginas-avion3.jpg");
+.parrafoNosotros p{
   font-size: xx-large;
-  font-family: 'Roboto', sans-serif; }
+  margin-bottom: 0px;
+  color:navy;
+}
 
 .SeccionAlojamiento, .seccionVuelos {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
 .ImgAlojamiento, .imgVuelos {
-  width: 320px;
-  height: 1000px;
+  width: 500px;
+  height: 400px;
   transition: width 2s, height 2s; }
   .ImgAlojamiento:hover, .imgVuelos:hover {
-    width: 700px; }
+    width: 600px; }
+
 
 .imagenFondo3 {
   padding-top: 50px;
@@ -165,35 +195,19 @@ footer a {
   font-size: xx-large;
   font-family: 'Roboto', sans-serif; }
 
-.imagenFondo3 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-.imagenFondo {
-  background-attachment: fixed;
-  background-size: 210vh;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/img/fondo-paginas-avion3.jpg");
-  font-size: xx-large;
-  font-family: 'Roboto', sans-serif; }
 
 .seccionContacto {
   width: 400px;
   height: 90%;
   padding: .8rem;
   overflow: hidden;
-  color: #0804fc;
+  color: rgb(255, 108, 108);
   border: 5px solid brown; }
   .seccionContacto label, .seccionContacto input, .seccionContacto textarea {
     display: block;
     width: 100%;
     margin-bottom: 8px;
-    background-color: indianred; }
+    background-color: rgb(139, 138, 138); }
   .seccionContacto input:not([type='submit']) {
     border: none;
     border-bottom: 2px solid salmon;
@@ -213,10 +227,10 @@ footer a {
 input[type='submit'] {
   padding: 10px;
   border: none;
-  background-color: lightcoral;
+  background-color: rgb(109, 108, 108)
   color: white;
   font-size: 20px;
-  cursor: pointer; }
+  cursor: pointer;}
 
 .imagenFondo3 {
   padding-top: 50px;
@@ -229,17 +243,7 @@ input[type='submit'] {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  color: red; }
-
-.imagenFondo {
-  background-attachment: fixed;
-  background-size: 210vh;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/img/fondo-paginas-avion3.jpg");
-  font-size: xx-large;
-  font-family: 'Roboto', sans-serif; }
+  color: rgb(111, 0, 255); }
 
 @media (max-width: 768px) {
   body {
@@ -282,28 +286,30 @@ input[type='submit'] {
     height: 300px;
     transition: width 2s , height 2s; }
     .OfImg:hover {
-      height: 450px;
-      width: 450px; }
+      height: 400px;
+      width: 400px; }
   .seccionOferta {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center; }
+    justify-items: center; 
+    margin: 10px;
+    margin-bottom: 0px;}
   .opiniones {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; }
     .opiniones p {
       font-family: 'Roboto', sans-serif;
-      font-size: 23px;
+      font-size: 19px;
       border: 3px solid #fd0101;
       width: 310px;
-      height: 310px;
+      height: 345px;
       color: #001aff;
       transition: width 2s, height 2s; }
       .opiniones p:hover {
-        width: 400px;
-        height: 550px;
-        font-size: 33px; }
+        width: 335px;
+        height: 400px;
+        font-size: 22px; }
   .opiniones2 {
     display: flex;
     flex-flow: row wrap;
@@ -349,11 +355,13 @@ input[type='submit'] {
     margin-left: 100px; }
   .ImgAlojamiento, .imgVuelos {
     width: 250px;
-    height: 600px;
-    transition: width 2s, height 2s; }
+    height: 250px;
+    transition: width 2s, height 2s;
+    margin: 10px;
+    margin-bottom: 0px;}
     .ImgAlojamiento:hover, .imgVuelos:hover {
       width: 300px;
-      height: 800px; }
+      height: 300px; }
   .seccionVuelos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -361,11 +369,11 @@ input[type='submit'] {
     margin-left: 100px; }
   .imgVuelos {
     width: 250px;
-    height: 600px;
+    height: 250px;
     transition: width 2s, height 2s; }
     .imgVuelos:hover {
       width: 300px;
-      height: 800px; }
+      height: 300px; }
   .nosotros {
     display: flex;
     flex-flow: row wrap;
@@ -457,7 +465,11 @@ input[type='submit'] {
   .seccionOferta, .opiniones {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 0px;
+  }
+    
   .title {
     font-size: xx-large; }
   .opinionesTitulo {
@@ -466,7 +478,7 @@ input[type='submit'] {
     justify-content: center; }
   .opiniones p {
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    font-size: 15px;
     border: 3px solid black;
     width: 310px;
     height: 310px;
@@ -474,8 +486,8 @@ input[type='submit'] {
     transition: width 2s, height 2s; }
     .opiniones p:hover {
       width: 275px;
-      height: 500px;
-      font-size: 28px; }
+      height: 430px;
+      font-size: 19px; }
   .logosFooter {
     list-style-type: none;
     width: 50px;

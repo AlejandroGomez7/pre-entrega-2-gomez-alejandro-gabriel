@@ -1,0 +1,16 @@
+.button {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 4px;
+    text-decoration: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: solid #a31cd9 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#692bba), to(#b839a9));
+    background: -moz-linear-gradient(top, #692bba, #b839a9);
+    width: 270px;
+  }
+  .button:hover {
+    background: #3fb8fa;
+  }
